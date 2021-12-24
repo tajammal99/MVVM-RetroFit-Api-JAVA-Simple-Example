@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small_margin"
+    >
+
+    <ImageView
+        android:id="@+id/main_list_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_photo_24"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/main_list_image"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        >
+
+        <TextView
+            android:id="@+id/order_id_main_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text one"
+            android:textSize="@dimen/large_txt"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/order_no_main_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Two"
+            android:textSize="@dimen/medium_txt"
+            />
+        <TextView
+            android:id="@+id/order_desc_main_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Three"
+            android:textSize="@dimen/small_txt"
+            />
+        <TextView
+            android:id="@+id/order_total_price_main_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Four"
+            android:textSize="@dimen/small_txt"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/search_bar_txt_color"
+        android:layout_below="@+id/main_list_image"
+        android:layout_marginStart="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
+        />
+
+</RelativeLayout>

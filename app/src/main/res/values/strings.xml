@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Tailor</string>
+    <string name="search_here">Search Item</string>
+    <string name="order_number">Order number</string>
+</resources>

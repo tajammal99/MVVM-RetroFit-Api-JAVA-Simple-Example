@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+   <EditText
+       android:id="@+id/search_bar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/search_here"
+       android:layout_marginStart="@dimen/small_margin"
+       android:layout_marginEnd="@dimen/small_margin"
+       android:layout_marginTop="@dimen/small_margin"
+       android:layout_marginBottom="@dimen/small_margin"
+       tools:ignore="Autofill,TextFields"
+       android:padding="@dimen/small_margin"
+       android:drawableEnd="@drawable/ic_baseline_search_24"
+       android:drawablePadding="@dimen/small_margin"
+       android:background="@drawable/search_bar_bg"
+       android:textColor="@color/search_bar_txt_color"
+       android:textColorHint="@color/search_bar_txt_color"
+       />
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycle_view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginStart="@dimen/small_margin"
+       android:layout_marginEnd="@dimen/small_margin"
+       android:layout_below="@+id/search_bar"
+       />
+
+   <ProgressBar
+       android:id="@+id/progress_circular"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true" />
+
+</RelativeLayout>
